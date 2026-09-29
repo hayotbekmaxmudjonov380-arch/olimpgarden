@@ -1,0 +1,383 @@
+// OLIMP GARDEN RESTAURANT - Internationalization (i18n)
+const TRANSLATIONS = {
+  uz: {
+    // Nav
+    nav_home: "Bosh sahifa",
+    nav_about: "Biz haqimizda",
+    nav_menu: "Menyu",
+    nav_reservation: "Stol band qilish",
+    nav_reviews: "Fikrlar",
+    nav_contact: "Aloqa",
+    btn_book_table: "Stol Band Qilish",
+    cart_title: "Sizning Savatchangiz",
+
+    // Hero
+    hero_badge: "🌿 Urganchdagi Eksklyuziv Yashil Bog' Restorani",
+    hero_title: "Urganchning Yuragidagi Yashil Oazis va Lazzat Maskan",
+    hero_desc: "Yevropa va Milliy taomlar, oliy darajadagi xizmat hamda unutilmas shinam muhit. Har bir tashrifingizni unutilmas tantanaga aylantiramiz.",
+    hero_cta_menu: "Onlayn Menyuni Ko'rish",
+    hero_cta_book: "Stol Band Qilish",
+    stat_rating: "4.5 ⭐ Google Reytingi",
+    stat_rating_sub: "94+ haqiqiy sharhlar",
+    stat_cuisine: "100% Halol & Yangi",
+    stat_cuisine_sub: "Milliy & Yevropa oshxonasi",
+    stat_vip: "Alohida VIP Xonalar",
+    stat_vip_sub: "Tantanalar va biznes uchun",
+    stat_atmosphere: "Yashil Oazis Muhiti",
+    stat_atmosphere_sub: "Tirik o'simliklar & sokinlik",
+
+    // About
+    about_badge: "Tarix va Muhit",
+    about_title: "Olimp Garden Haqida",
+    about_subtitle: "Zamonaviy shahar shovqinidan xoli, tirik tabiat quchog'idagi shinam maskan",
+    about_text_1: "Olimp Garden — bu shunchaki restoran emas, balki Urganch shahrida nafis lazzatlar va tirik yam-yashil tabiat birlashgan betakror maskandir. Bizning maqsadimiz — har bir mehmonga o'z uyidagidek iliqlik, eng sara taomlar va shohona xizmatni taqdim etish.",
+    about_text_2: "Biz Amudaryoning eng toza baliqlaridan tortib, eng sara marmar go'shtli steyklar va qadimiy Xorazm retseptlarigacha bo'lgan mukammal uyg'unlikni yaratdik.",
+    feat_garden_title: "Tirik Yashil Bog' Muhiti",
+    feat_garden_desc: "Tabiiy o'simliklar, toza havo, mayin chiroqlar va xotirjam sokin muhit.",
+    feat_fish_title: "Mualliflik Baliq va Steyklar",
+    feat_fish_desc: "Amudaryo sudagi, zog'orasi hamda qat-qat marmar go'shtli sara steyklar.",
+    feat_vip_title: "Shaxsiy VIP Xonalar",
+    feat_vip_desc: "Oilaviy to'ylar, tug'ilgan kunlar va nufuzli biznes muzokaralari uchun.",
+    feat_family_title: "Oilaviy va Bolalar Uchun",
+    feat_family_desc: "Keng zallar, maxsus bolalar qulayligi va xavfsiz iliq atmosfera.",
+    about_btn_instagram: "Instagram sahifamiz",
+    about_btn_maps: "Google Xaritada ko'rish",
+
+    // Menu
+    menu_badge: "Gurmanlar Tanlovi",
+    menu_title: "Bizning Interaktiv Menyu",
+    menu_desc: "Sevimli taomlaringizni tanlang va qulay onlayn buyurtma bering.",
+    menu_search_placeholder: "Taom yoki ichimlik qidirish...",
+    menu_add_to_cart: "Savatga qo'shish",
+    menu_added: "Savatga qo'shildi",
+    menu_qr_text: "To'liq rasmiy QR-kod menyusini ko'rish:",
+    menu_qr_btn: "Raqamli QR Menyuni Ochish",
+    badge_popular: "Mashhur",
+    badge_new: "Yangi",
+    currency: "so'm",
+
+    // Reservation
+    reserve_badge: "Joyingizni Oldindan Band Qiling",
+    reserve_title: "Stol Band Qilish",
+    reserve_desc: "Oilaviy oqshom, do'stlar uchrashuvi yoki bayramingiz uchun qulay stol yoki VIP xonani band qiling.",
+    form_name_label: "Ismingiz va Familiyangiz",
+    form_name_placeholder: "Masalan: Alisher Vohidov",
+    form_phone_label: "Telefon Raqamingiz",
+    form_guests_label: "Mehmonlar soni",
+    form_guests_1: "1-2 kishi (Romantik / Shaxsiy)",
+    form_guests_2: "3-5 kishi (Oila / Do'stlar)",
+    form_guests_3: "6-10 kishi (Katta davra)",
+    form_guests_4: "10+ kishi (Banket / Tadbir)",
+    form_date_label: "Tashrif Sanasi",
+    form_time_label: "Tashrif Vaqti",
+    form_zone_label: "Zukko Tanlov (Joylashuv)",
+    form_zone_hall: "Umumiy Yashil Bog' Zali",
+    form_zone_vip: "Alohida VIP Xona",
+    form_zone_terrace: "Shinam Ochiq Veranda",
+    form_notes_label: "Qo'shimcha istaklaringiz (ixtiyoriy)",
+    form_notes_placeholder: "Masalan: Bolalar stuli kerak, tug'ilgan kun nishonlanadi...",
+    btn_submit_reservation: "Stolni Tasdiqlash",
+    reserve_safe_note: "🔒 Bron qilishingiz bepul va xodimlarimiz 15 daqiqada siz bilan bog'lanishadi.",
+
+    // Reviews
+    reviews_badge: "Mijozlar Mehri",
+    reviews_title: "Google Xaritalardagi Fikrlar",
+    reviews_subtitle: "94 dan ortiq haqiqiy tashrif buyuruvchilarning xolis baholari",
+    reviews_rating_label: "A'lo darajadagi servis",
+    reviews_leave_review: "Google'da Fikr Qoldirish",
+
+    // Contact
+    contact_badge: "Bizni Oson Toping",
+    contact_title: "Biz Bilan Aloqa va Manzil",
+    contact_subtitle: "Urganch shahri bo'ylab sizni kutib olishdan doim mamnunmiz",
+    contact_address_label: "Bizning Manzil",
+    contact_address_val: "GJV4+24G, Mash'al MFY, Urganch, Xorazm Viloyati, O'zbekiston",
+    contact_phone_label: "Telefon Raqam",
+    contact_phone_val: "+998 99 240 00 38",
+    contact_hours_label: "Ish Vaqti",
+    contact_hours_val: "Har kuni: 10:00 — 23:00",
+    contact_call_now: "Hozir Qo'ng'iroq Qilish",
+    contact_open_map: "Xaritada Yo'nalish Olish",
+    contact_socials_title: "Ijtimoiy Tarmoqlarda Biz",
+
+    // Cart Modal
+    cart_empty: "Savatchangiz hozircha bo'sh.",
+    cart_empty_sub: "Menyudan o'zingiz yoqtirgan lazzatli taomlarni qo'shing!",
+    cart_subtotal: "Jami hisob:",
+    cart_order_telegram: "Telegram Orqali Buyurtma Berish",
+    cart_clear: "Savatchani tozalash",
+    cart_close: "Yopish",
+
+    // Reservation Success Modal
+    modal_success_title: "Stol Muvaffaqiyatli Band Qilindi!",
+    modal_success_desc: "Hurmatli mehmon, sizning bron arizangiz qabul qilindi. Tez orada ma'murlarimiz siz bilan telefon orqali bog'lanishadi.",
+    modal_ref_label: "Bron Kodingiz:",
+    modal_btn_done: "Tushunarli",
+    modal_btn_telegram_confirm: "Telegramda Tasdiqni Saqlash",
+
+    // Floating & Quick
+    floating_call: "Qo'ng'iroq qilish",
+    floating_telegram: "Telegram orqali yozish",
+    back_to_top: "Yuqoriga",
+
+    // Footer
+    footer_desc: "Urganchdagi eng shinam yashil oazis restorani. Oliy darajadagi milliy va Yevropa taomlari hamda unutilmas mehmondo'stlik.",
+    footer_rights: "Barcha huquqlar himoyalangan.",
+    footer_nav_title: "Tezkor Havolalar",
+    footer_hours_title: "Mehmonlarni Qabul Qilish"
+  },
+
+  ru: {
+    // Nav
+    nav_home: "Главная",
+    nav_about: "О нас",
+    nav_menu: "Меню",
+    nav_reservation: "Бронь стола",
+    nav_reviews: "Отзывы",
+    nav_contact: "Контакты",
+    btn_book_table: "Забронировать Стол",
+    cart_title: "Ваша Корзина",
+
+    // Hero
+    hero_badge: "🌿 Эксклюзивный Зеленый Ресторан-Оазис в Ургенче",
+    hero_title: "Зеленый Оазис и Центр Вкуса в Сердце Ургенча",
+    hero_desc: "Европейская и национальная кухня, первоклассный сервис и незабываемая атмосфера уюта. Превратим каждый ваш визит в настоящий праздник.",
+    hero_cta_menu: "Смотреть Онлайн Меню",
+    hero_cta_book: "Забронировать Стол",
+    stat_rating: "4.5 ⭐ Рейтинг Google",
+    stat_rating_sub: "Более 94 реальных отзывов",
+    stat_cuisine: "100% Халяль & Свежесть",
+    stat_cuisine_sub: "Национальная и европейская",
+    stat_vip: "Отдельные VIP Залы",
+    stat_vip_sub: "Для торжеств и переговоров",
+    stat_atmosphere: "Зеленый Сад-Оазис",
+    stat_atmosphere_sub: "Живые растения и покой",
+
+    // About
+    about_badge: "История и Атмосфера",
+    about_title: "О Ресторане Olimp Garden",
+    about_subtitle: "Уютный уголок живой природы вдали от городского шума",
+    about_text_1: "Olimp Garden — это не просто ресторан, это уникальное гастрономическое пространство в Ургенче, где гармонично соединились изысканный вкус и сочная живая зелень.",
+    about_text_2: "Мы создали идеальное меню: от свежайшей амударьинской рыбы и мраморных стейков до старинных хорезмских кулинарных шедевров.",
+    feat_garden_title: "Живая Атмосфера Сада",
+    feat_garden_desc: "Натуральные растения, чистый воздух, теплый свет и безмятежное спокойствие.",
+    feat_fish_title: "Авторская Рыба и Стейки",
+    feat_fish_desc: "Амударьинский судак, сазан и сочные мраморные стейки на углях.",
+    feat_vip_title: "Приватные VIP Залы",
+    feat_vip_desc: "Для семейных праздников, дней рождения и деловых переговоров.",
+    feat_family_title: "Семейный Отдых и Дети",
+    feat_family_desc: "Просторные залы, удобства для детей и теплая безопасная атмосфера.",
+    about_btn_instagram: "Наш Instagram",
+    about_btn_maps: "Смотреть на Google Картах",
+
+    // Menu
+    menu_badge: "Выбор Гурманов",
+    menu_title: "Наше Интерактивное Меню",
+    menu_desc: "Выберите любимые блюда и оформите удобный онлайн-заказ.",
+    menu_search_placeholder: "Поиск блюд или напитков...",
+    menu_add_to_cart: "В корзину",
+    menu_added: "Добавлено",
+    menu_qr_text: "Официальное полное QR-меню:",
+    menu_qr_btn: "Открыть QR Меню",
+    badge_popular: "Хит",
+    badge_new: "Новинка",
+    currency: "сум",
+
+    // Reservation
+    reserve_badge: "Забронируйте заранее",
+    reserve_title: "Бронирование Стола",
+    reserve_desc: "Забронируйте комфортный столик или VIP-зал для романтического ужина, праздника или семейного отдыха.",
+    form_name_label: "Ваше Имя и Фамилия",
+    form_name_placeholder: "Например: Тимур Алиев",
+    form_phone_label: "Номер Телефона",
+    form_guests_label: "Количество гостей",
+    form_guests_1: "1-2 человека (Романтический / Личный)",
+    form_guests_2: "3-5 человек (Семья / Друзья)",
+    form_guests_3: "6-10 человек (Большая компания)",
+    form_guests_4: "10+ человек (Банкет / Торжество)",
+    form_date_label: "Дата визита",
+    form_time_label: "Время визита",
+    form_zone_label: "Выбор Зала",
+    form_zone_hall: "Основной Зеленый Сад",
+    form_zone_vip: "Отдельная VIP-комната",
+    form_zone_terrace: "Уютная Открытая Веранда",
+    form_notes_label: "Пожелания (необязательно)",
+    form_notes_placeholder: "Например: Нужен детский стульчик, празднуем юбилей...",
+    btn_submit_reservation: "Подтвердить Бронь",
+    reserve_safe_note: "🔒 Бронирование бесплатно. Администратор свяжется с вами в течение 15 минут.",
+
+    // Reviews
+    reviews_badge: "Любовь Гостей",
+    reviews_title: "Отзывы на Google Картах",
+    reviews_subtitle: "Честные оценки более 94 реальных посетителей",
+    reviews_rating_label: "Высший уровень сервиса",
+    reviews_leave_review: "Оставить отзыв в Google",
+
+    // Contact
+    contact_badge: "Как Нас Найти",
+    contact_title: "Контакты и Локация",
+    contact_subtitle: "Всегда рады приветствовать вас в нашем ресторане в Ургенче",
+    contact_address_label: "Наш Адрес",
+    contact_address_val: "GJV4+24G, с/с Машъал, г. Ургенч, Хорезмская область, Узбекистан",
+    contact_phone_label: "Телефон",
+    contact_phone_val: "+998 99 240 00 38",
+    contact_hours_label: "Режим Работы",
+    contact_hours_val: "Ежедневно: 10:00 — 23:00",
+    contact_call_now: "Позвонить Сейчас",
+    contact_open_map: "Построить Маршрут",
+    contact_socials_title: "Мы в соцсетях",
+
+    // Cart Modal
+    cart_empty: "Ваша корзина пока пуста.",
+    cart_empty_sub: "Выберите аппетитные блюда из нашего меню!",
+    cart_subtotal: "Итого к оплате:",
+    cart_order_telegram: "Заказать через Telegram",
+    cart_clear: "Очистить корзину",
+    cart_close: "Закрыть",
+
+    // Reservation Success Modal
+    modal_success_title: "Стол Успешно Забронирован!",
+    modal_success_desc: "Уважаемый гость, ваша заявка на бронь принята. Наш администратор свяжется с вами в ближайшее время.",
+    modal_ref_label: "Код бронирования:",
+    modal_btn_done: "Понятно",
+    modal_btn_telegram_confirm: "Сохранить в Telegram",
+
+    // Floating & Quick
+    floating_call: "Позвонить",
+    floating_telegram: "Написать в Telegram",
+    back_to_top: "Наверх",
+
+    // Footer
+    footer_desc: "Самый зеленый и уютный ресторан-сад в Ургенче. Национальная и европейская кухня высшего качества.",
+    footer_rights: "Все права защищены.",
+    footer_nav_title: "Быстрые ссылки",
+    footer_hours_title: "Часы приёма гостей"
+  },
+
+  en: {
+    // Nav
+    nav_home: "Home",
+    nav_about: "About",
+    nav_menu: "Menu",
+    nav_reservation: "Reservation",
+    nav_reviews: "Reviews",
+    nav_contact: "Contact",
+    btn_book_table: "Book a Table",
+    cart_title: "Your Order Cart",
+
+    // Hero
+    hero_badge: "🌿 Luxury Garden Oasis Restaurant in Urgench",
+    hero_title: "Green Oasis & Culinary Excellence in the Heart of Urgench",
+    hero_desc: "Finest European and National gastronomy, impeccable service, and a memorable garden ambiance. Making every visit an extraordinary celebration.",
+    hero_cta_menu: "Explore Digital Menu",
+    hero_cta_book: "Reserve a Table",
+    stat_rating: "4.5 ⭐ Google Rating",
+    stat_rating_sub: "Over 94 verified reviews",
+    stat_cuisine: "100% Halal & Fresh",
+    stat_cuisine_sub: "National & European menu",
+    stat_vip: "Private VIP Rooms",
+    stat_vip_sub: "Events & business meetings",
+    stat_atmosphere: "Lush Garden Oasis",
+    stat_atmosphere_sub: "Living plants & tranquility",
+
+    // About
+    about_badge: "Atmosphere & Heritage",
+    about_title: "About Olimp Garden",
+    about_subtitle: "A serene nature-filled sanctuary away from the bustling city rhythm",
+    about_text_1: "Olimp Garden is more than just dining — it is Urgench's premier sanctuary where refined culinary craft meets lush botanical splendor.",
+    about_text_2: "From the freshest local Amu Darya river fish and premium marbled cuts to authentic Khorezm heritage recipes, every dish is an artful journey.",
+    feat_garden_title: "Lush Indoor Garden",
+    feat_garden_desc: "Living greenery, pure fresh air, warm lighting, and soothing ambience.",
+    feat_fish_title: "Signature River Fish & Steaks",
+    feat_fish_desc: "Fresh zander, carp, and prime cuts prepared over open coals.",
+    feat_vip_title: "Exclusive VIP Rooms",
+    feat_vip_desc: "Perfect for family anniversaries, private celebrations, and executive meetings.",
+    feat_family_title: "Family & Child Friendly",
+    feat_family_desc: "Spacious seating, kid accommodations, and warm hospitality.",
+    about_btn_instagram: "Instagram Profile",
+    about_btn_maps: "View on Google Maps",
+
+    // Menu
+    menu_badge: "Gourmet Selection",
+    menu_title: "Our Interactive Menu",
+    menu_desc: "Discover chef specialties and curate your personalized online dining basket.",
+    menu_search_placeholder: "Search dishes or drinks...",
+    menu_add_to_cart: "Add to Cart",
+    menu_added: "Added",
+    menu_qr_text: "Official Digital QR Code Menu:",
+    menu_qr_btn: "Open QR Menu",
+    badge_popular: "Popular",
+    badge_new: "New",
+    currency: "UZS",
+
+    // Reservation
+    reserve_badge: "Reserve Your Experience",
+    reserve_title: "Table Reservation",
+    reserve_desc: "Secure your table in our garden hall or reserve a private VIP room effortlessly.",
+    form_name_label: "Your Full Name",
+    form_name_placeholder: "E.g., John Smith",
+    form_phone_label: "Phone Number",
+    form_guests_label: "Number of Guests",
+    form_guests_1: "1-2 Guests (Romantic / Personal)",
+    form_guests_2: "3-5 Guests (Family / Friends)",
+    form_guests_3: "6-10 Guests (Large Group)",
+    form_guests_4: "10+ Guests (Event / Banquet)",
+    form_date_label: "Reservation Date",
+    form_time_label: "Reservation Time",
+    form_zone_label: "Seating Preference",
+    form_zone_hall: "Main Indoor Garden Hall",
+    form_zone_vip: "Private VIP Chamber",
+    form_zone_terrace: "Serene Garden Veranda",
+    form_notes_label: "Special Requests (Optional)",
+    form_notes_placeholder: "E.g., Baby chair needed, birthday celebration...",
+    btn_submit_reservation: "Confirm Reservation",
+    reserve_safe_note: "🔒 Reservation is free. Our host will confirm your booking within 15 minutes.",
+
+    // Reviews
+    reviews_badge: "Guest Praise",
+    reviews_title: "Google Maps Testimonials",
+    reviews_subtitle: "Trusted ratings from over 94 genuine visitors",
+    reviews_rating_label: "Outstanding dining experience",
+    reviews_leave_review: "Write a Google Review",
+
+    // Contact
+    contact_badge: "Visit & Connect",
+    contact_title: "Location & Contact",
+    contact_subtitle: "We look forward to welcoming you to our garden sanctuary in Urgench",
+    contact_address_label: "Our Address",
+    contact_address_val: "GJV4+24G, Mash'al MFY, Urgench, Khorezm Region, Uzbekistan",
+    contact_phone_label: "Phone Line",
+    contact_phone_val: "+998 99 240 00 38",
+    contact_hours_label: "Opening Hours",
+    contact_hours_val: "Every day: 10:00 AM — 11:00 PM",
+    contact_call_now: "Call Directly",
+    contact_open_map: "Get Directions on Map",
+    contact_socials_title: "Follow Our Socials",
+
+    // Cart Modal
+    cart_empty: "Your order cart is currently empty.",
+    cart_empty_sub: "Explore our menu and add your favorite dishes!",
+    cart_subtotal: "Estimated Total:",
+    cart_order_telegram: "Order via Telegram",
+    cart_clear: "Clear Cart",
+    cart_close: "Close",
+
+    // Reservation Success Modal
+    modal_success_title: "Table Successfully Reserved!",
+    modal_success_desc: "Dear guest, your reservation request has been registered. Our host will call you shortly to confirm.",
+    modal_ref_label: "Booking Reference:",
+    modal_btn_done: "Done",
+    modal_btn_telegram_confirm: "Save in Telegram",
+
+    // Floating & Quick
+    floating_call: "Call Us",
+    floating_telegram: "Chat on Telegram",
+    back_to_top: "Top",
+
+    // Footer
+    footer_desc: "Urgench's premier garden oasis dining destination. Exemplary national and European gastronomy with heartfelt hospitality.",
+    footer_rights: "All rights reserved.",
+    footer_nav_title: "Quick Links",
+    footer_hours_title: "Service Hours"
+  }
+};

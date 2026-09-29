@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLIMP GARDEN RESTAURANT — Urganch | Yashil Oazis va Lazzat Maskan</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="Olimp Garden Restaurant — Urganchdagi premium darajadagi yashil bog' restorani. Milliy va Yevropa taomlari, mualliflik baliq taomlari, sara steyklar, VIP xonalar va shinam oilaviy muhit.">
+  <meta name="keywords" content="Olimp Garden, Urganch restoran, Urgench restaurant, Xorazm baliq taomlari, steyk Urganch, VIP xonalar, shivit oshi, stol band qilish">
+  <meta name="theme-color" content="#1B4332">
+
+  <!-- Open Graph / Facebook / Telegram -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="OLIMP GARDEN RESTAURANT — Urganch">
+  <meta property="og:description" content="Urganchning yuragidagi yashil oazis, betakror baliq va steyk taomlari, shinam VIP xonalar hamda oliy darajadagi xizmat.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="https://maps.google.com/?cid=13944089351211844180">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Olimp Garden Restaurant">
+        <div class="brand-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">OLIMP GARDEN</span>
+          <span class="brand-tag">RESTAURANT • URGANCH</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link" data-i18n="nav_home">Bosh sahifa</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav_about">Biz haqimizda</a></li>
+        <li><a href="#menu" class="nav-link" data-i18n="nav_menu">Menyu</a></li>
+        <li><a href="#reservation" class="nav-link" data-i18n="nav_reservation">Stol band qilish</a></li>
+        <li><a href="#reviews" class="nav-link" data-i18n="nav_reviews">Fikrlar</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Aloqa</a></li>
+      </ul>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        
+        <!-- Multi-language Switcher -->
+        <div class="lang-selector">
+          <button class="lang-btn" id="langBtn" aria-label="Tilni tanlash">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="langText">UZ</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-option active" data-lang="uz">🇺🇿 O'zbekcha</button>
+            <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+            <button class="lang-option" data-lang="en">🇬🇧 English</button>
+          </div>
+        </div>
+
+        <!-- Cart Trigger Button -->
+        <button class="cart-trigger-btn" id="cartTriggerBtn" aria-label="Savatcha">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count-badge" id="cartBadge" style="display:none;">0</span>
+        </button>
+
+        <!-- CTA Header Button -->
+        <a href="#reservation" class="btn btn-gold btn-book-nav" data-i18n="btn_book_table">Stol Band Qilish</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menyuni ochish">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-backdrop"></div>
+    <div class="hero-overlay-glow"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        
+        <div class="badge-pill" data-i18n="hero_badge">
+          🌿 Urganchdagi Eksklyuziv Yashil Bog' Restorani
+        </div>
+
+        <h1 class="hero-title" data-i18n="hero_title">
+          Urganchning Yuragidagi <span>Yashil Oazis</span> va Lazzat Maskan
+        </h1>
+
+        <p class="hero-description" data-i18n="hero_desc">
+          Yevropa va Milliy taomlar, oliy darajadagi xizmat hamda unutilmas shinam muhit. Har bir tashrifingizni unutilmas tantanaga aylantiramiz.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-outline-white" data-i18n="hero_cta_menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            <span>Onlayn Menyuni Ko'rish</span>
+          </a>
+          <a href="#reservation" class="btn btn-gold" data-i18n="hero_cta_book">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <span>Stol Band Qilish</span>
+          </a>
+        </div>
+
+        <!-- Trust Stats Strip -->
+        <div class="hero-stats-grid">
+          <div class="hero-stat-card">
+            <span class="hero-stat-val" data-i18n="stat_rating">4.5 ⭐ Google Reytingi</span>
+            <span class="hero-stat-desc" data-i18n="stat_rating_sub">94+ haqiqiy sharhlar</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-val" data-i18n="stat_cuisine">100% Halol & Yangi</span>
+            <span class="hero-stat-desc" data-i18n="stat_cuisine_sub">Milliy & Yevropa oshxonasi</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-val" data-i18n="stat_vip">Alohida VIP Xonalar</span>
+            <span class="hero-stat-desc" data-i18n="stat_vip_sub">Tantanalar va biznes uchun</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-val" data-i18n="stat_atmosphere">Yashil Oazis Muhiti</span>
+            <span class="hero-stat-desc" data-i18n="stat_atmosphere_sub">Tirik o'simliklar & sokinlik</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: ABOUT / ATMOSPHERE
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      
+      <div class="about-grid">
+        <div class="about-text-col">
+          <div class="badge-pill" data-i18n="about_badge">Tarix va Muhit</div>
+          <h2 class="section-title" data-i18n="about_title">Olimp Garden Haqida</h2>
+          <p class="section-subtitle" data-i18n="about_subtitle" style="margin-bottom: 24px;">
+            Zamonaviy shahar shovqinidan xoli, tirik tabiat quchog'idagi shinam maskan.
+          </p>
+
+          <p data-i18n="about_text_1">
+            Olimp Garden — bu shunchaki restoran emas, balki Urganch shahrida nafis lazzatlar va tirik yam-yashil tabiat birlashgan betakror maskandir. Bizning maqsadimiz — har bir mehmonga o'z uyidagidek iliqlik, eng sara taomlar va shohona xizmatni taqdim etish.
+          </p>
+          <p data-i18n="about_text_2">
+            Biz Amudaryoning eng toza baliqlaridan tortib, eng sara marmar go'shtli steyklar va qadimiy Xorazm retseptlarigacha bo'lgan mukammal uyg'unlikni yaratdik.
+          </p>
+
+          <div class="about-cta-links">
+            <a href="https://www.instagram.com/olimpkafe" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+              <span data-i18n="about_btn_instagram">Instagram sahifamiz</span>
+            </a>
+            <a href="https://maps.google.com/?cid=13944089351211844180" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span data-i18n="about_btn_maps">Google Xaritada ko'rish</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-visual-col">
+          <div class="visual-image-main">
+            <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=1000&q=80" alt="Olimp Garden Yashil Interyeri" loading="lazy">
+            <div class="visual-badge-overlay">
+              <div class="visual-badge-icon">🌿</div>
+              <div>
+                <div class="visual-badge-title">Green Oasis Concept</div>
+                <div class="visual-badge-sub">Tabiiy o'simliklar & Issiq nur</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Atmosphere 4 Key Features -->
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h3 class="feature-title" data-i18n="feat_garden_title">Tirik Yashil Bog' Muhiti</h3>
+          <p class="feature-desc" data-i18n="feat_garden_desc">Tabiiy o'simliklar, toza havo, mayin chiroqlar va xotirjam sokin muhit.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🐟</div>
+          <h3 class="feature-title" data-i18n="feat_fish_title">Mualliflik Baliq va Steyklar</h3>
+          <p class="feature-desc" data-i18n="feat_fish_desc">Amudaryo sudagi, zog'orasi hamda qat-qat marmar go'shtli sara steyklar.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏛️</div>
+          <h3 class="feature-title" data-i18n="feat_vip_title">Shaxsiy VIP Xonalar</h3>
+          <p class="feature-desc" data-i18n="feat_vip_desc">Oilaviy to'ylar, tug'ilgan kunlar va nufuzli biznes muzokaralari uchun.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👨‍👩‍👧‍👦</div>
+          <h3 class="feature-title" data-i18n="feat_family_title">Oilaviy va Bolalar Uchun</h3>
+          <p class="feature-desc" data-i18n="feat_family_desc">Keng zallar, maxsus bolalar qulayligi va xavfsiz iliq atmosfera.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: INTERACTIVE DIGITAL MENU & ORDERING
+       ========================================================================== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="badge-pill" data-i18n="menu_badge">Gurmanlar Tanlovi</div>
+        <h2 class="section-title">
+          <span data-i18n="menu_title">Bizning Interaktiv Menyu</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="menu_desc">
+          Sevimli taomlaringizni tanlang va qulay onlayn buyurtma bering.
+        </p>
+      </div>
+
+      <!-- Search and Filter Bar -->
+      <div class="menu-filters-wrapper">
+        <div class="menu-search-bar">
+          <svg class="menu-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="text" class="menu-search-input" id="menuSearchInput" placeholder="Taom yoki ichimlik qidirish..." data-i18n-placeholder="menu_search_placeholder">
+        </div>
+
+        <div class="category-pills" id="categoryPills">
+          <!-- Dynamically populated from JS -->
+        </div>
+      </div>
+
+      <!-- Food Items Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Dynamically rendered dish cards -->
+      </div>
+
+      <!-- Live QR Code Menu Banner Link -->
+      <div class="menu-qr-banner">
+        <div class="menu-qr-info">
+          <div class="menu-qr-icon">📱</div>
+          <div>
+            <div class="menu-qr-title" data-i18n="menu_qr_text">To'liq rasmiy QR-kod menyusini ko'rish:</div>
+            <div class="menu-qr-sub">Smartfoningiz orqali to'liq narxlar va barcha taomlar bilan onlayn tanishing</div>
+          </div>
+        </div>
+        <a href="https://menu.myqrcodemenu.com/menu/olimp-kafe-1c366a/uz" target="_blank" rel="noopener noreferrer" class="btn btn-gold" data-i18n="menu_qr_btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          <span>Raqamli QR Menyuni Ochish</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: TABLE RESERVATION SYSTEM (STOL BRON QILISH)
+       ========================================================================== -->
+  <section class="reservation-section" id="reservation">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="badge-pill" data-i18n="reserve_badge">Joyingizni Oldindan Band Qiling</div>
+        <h2 class="section-title">
+          <span class="text-gold" data-i18n="reserve_title">Stol Band Qilish</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="reserve_desc">
+          Oilaviy oqshom, do'stlar uchrashuvi yoki bayramingiz uchun qulay stol yoki VIP xonani band qiling.
+        </p>
+      </div>
+
+      <div class="reservation-card">
+        <form id="reservationForm">
+          <div class="reservation-form-grid">
+            
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="resName" class="form-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                <span data-i18n="form_name_label">Ismingiz va Familiyangiz</span> *
+              </label>
+              <input type="text" id="resName" class="form-input" placeholder="Masalan: Alisher Vohidov" data-i18n-placeholder="form_name_placeholder" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+              <label for="resPhone" class="form-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span data-i18n="form_phone_label">Telefon Raqamingiz</span> *
+              </label>
+              <input type="tel" id="resPhone" class="form-input" placeholder="+998 90 123 45 67" required value="+998 ">
+            </div>
+
+            <!-- Guests Count -->
+            <div class="form-group">
+              <label for="resGuests" class="form-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                <span data-i18n="form_guests_label">Mehmonlar soni</span>
+              </label>
+              <select id="resGuests" class="form-select">
+                <option value="1-2 kishi" data-i18n="form_guests_1">1-2 kishi (Romantik / Shaxsiy)</option>
+                <option value="3-5 kishi" selected data-i18n="form_guests_2">3-5 kishi (Oila / Do'stlar)</option>
+                <option value="6-10 kishi" data-i18n="form_guests_3">6-10 kishi (Katta davra)</option>
+                <option value="10+ kishi" data-i18n="form_guests_4">10+ kishi (Banket / Tadbir)</option>
+              </select>
+            </div>
+
+            <!-- Seating Zone -->
+            <div class="form-group">
+              <label for="resZone" class="form-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                <span data-i18n="form_zone_label">Zukko Tanlov (Joylashuv)</span>
+              </label>
+              <select id="resZone" class="form-select">
+                <option value="Umumiy Yashil Bog' Zali" data-i18n="form_zone_hall">Umumiy Yashil Bog' Zali</option>
+                <option value="Alohida VIP Xona" data-i18n="form_zone_vip">Alohida VIP Xona</option>
+                <option value="Shinam Ochiq Veranda" data-i18n="form_zone_terrace">Shinam Ochiq Veranda</option>
+              </select>
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+              <label for="resDate" class="form-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+                <span data-i18n="form_date_label">Tashrif Sanasi</span> *
+              </label>
+              <input type="date" id="resDate" class="form-input" required>
+            </div>
+
+            <!-- Time -->
+            <div class="form-group">
+              <label for="resTime" class="form-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span data-i18n="form_time_label">Tashrif Vaqti</span> *
+              </label>
+              <input type="time" id="resTime" class="form-input" value="18:30" required>
+            </div>
+
+            <!-- Special Notes -->
+            <div class="form-group full-width">
+              <label for="resNotes" class="form-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+                <span data-i18n="form_notes_label">Qo'shimcha istaklaringiz (ixtiyoriy)</span>
+              </label>
+              <textarea id="resNotes" class="form-textarea" placeholder="Masalan: Bolalar stuli kerak, tug'ilgan kun nishonlanadi..." data-i18n-placeholder="form_notes_placeholder"></textarea>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width: 100%; padding: 16px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <span data-i18n="btn_submit_reservation">Stolni Tasdiqlash</span>
+          </button>
+
+          <p class="form-safe-note" data-i18n="reserve_safe_note">
+            🔒 Bron qilishingiz bepul va xodimlarimiz 15 daqiqada siz bilan bog'lanishadi.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: REVIEWS & REPUTATION (GOOGLE PROOF)
+       ========================================================================== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container" style="text-align: center;">
+      
+      <div class="section-header">
+        <div class="badge-pill" data-i18n="reviews_badge">Mijozlar Mehri</div>
+        <h2 class="section-title" data-i18n="reviews_title">Google Xaritalardagi Fikrlar</h2>
+        <p class="section-subtitle" data-i18n="reviews_subtitle">
+          94 dan ortiq haqiqiy tashrif buyuruvchilarning xolis baholari
+        </p>
+      </div>
+
+      <!-- Google Rating Summary Badge -->
+      <div class="google-rating-banner">
+        <svg class="google-logo-icon" viewBox="0 0 24 24">
+          <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+          <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+          <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+        </svg>
+        <span class="google-score">4.5 / 5.0</span>
+        <span class="google-stars">★★★★★</span>
+        <span class="google-count">(94+ Google Maps Sharhlari)</span>
+      </div>
+
+      <!-- Testimonial Cards Grid -->
+      <div class="reviews-grid" id="testimonialsGrid">
+        <!-- Rendered from JS testimonials data -->
+      </div>
+
+      <div>
+        <a href="https://maps.google.com/?cid=13944089351211844180" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold" data-i18n="reviews_leave_review">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+          </svg>
+          <span>Google'da Fikr Qoldirish</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: LOCATION, MAP & CONTACTS
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="badge-pill" data-i18n="contact_badge">Bizni Oson Toping</div>
+        <h2 class="section-title" data-i18n="contact_title">Biz Bilan Aloqa va Manzil</h2>
+        <p class="section-subtitle" data-i18n="contact_subtitle">
+          Urganch shahri bo'ylab sizni kutib olishdan doim mamnunmiz.
+        </p>
+      </div>
+
+      <div class="contact-layout-grid">
+        
+        <!-- Contact Info Cards -->
+        <div class="contact-info-panel">
+          
+          <!-- Address Card -->
+          <div class="contact-detail-card">
+            <div class="contact-icon-box">📍</div>
+            <div>
+              <div class="contact-card-title" data-i18n="contact_address_label">Bizning Manzil</div>
+              <div class="contact-card-val" data-i18n="contact_address_val">
+                GJV4+24G, Mash'al MFY, Urganch, Xorazm Viloyati, O'zbekiston
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="contact-detail-card">
+            <div class="contact-icon-box">📞</div>
+            <div>
+              <div class="contact-card-title" data-i18n="contact_phone_label">Telefon Raqam</div>
+              <a href="tel:+998992400038" class="contact-card-link" data-i18n="contact_phone_val">
+                +998 99 240 00 38
+              </a>
+            </div>
+          </div>
+
+          <!-- Hours Card -->
+          <div class="contact-detail-card">
+            <div class="contact-icon-box">⏰</div>
+            <div>
+              <div class="contact-card-title" data-i18n="contact_hours_label">Ish Vaqti</div>
+              <div class="contact-card-val" data-i18n="contact_hours_val">
+                Har kuni: 10:00 — 23:00
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links Bar -->
+          <div>
+            <div class="contact-card-title" style="margin-bottom: 12px;" data-i18n="contact_socials_title">Ijtimoiy Tarmoqlarda Biz</div>
+            <div class="social-links-bar">
+              <a href="https://www.instagram.com/olimpkafe" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                <span>Instagram</span>
+              </a>
+
+              <a href="https://t.me/olimpkafe" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                <span>Telegram</span>
+              </a>
+
+              <a href="https://maps.google.com/?cid=13944089351211844180" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="10" r="3"/>
+                  <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/>
+                </svg>
+                <span>Google Maps</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Google Maps View -->
+        <div class="map-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11986.324831206148!2d60.627!3d41.558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc17997576a0d2dc4!2sOlimp%20kafe!5e0!3m2!1sen!2suz!4v1700000000000!5m2!1sen!2suz" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Olimp Garden Restaurant Location Map"
+            aria-label="Google Maps Urganch Olimp Garden">
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col-brand">
+          <a href="#home" class="brand-logo">
+            <div class="brand-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">OLIMP GARDEN</span>
+              <span class="brand-tag">RESTAURANT</span>
+            </div>
+          </a>
+          <p data-i18n="footer_desc">
+            Urganchdagi eng shinam yashil oazis restorani. Oliy darajadagi milliy va Yevropa taomlari hamda unutilmas mehmondo'stlik.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" data-i18n="footer_nav_title">Tezkor Havolalar</h4>
+          <ul class="footer-links">
+            <li><a href="#home" data-i18n="nav_home">Bosh sahifa</a></li>
+            <li><a href="#about" data-i18n="nav_about">Biz haqimizda</a></li>
+            <li><a href="#menu" data-i18n="nav_menu">Menyu</a></li>
+            <li><a href="#reservation" data-i18n="nav_reservation">Stol band qilish</a></li>
+            <li><a href="#reviews" data-i18n="nav_reviews">Mijozlar fikrlari</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Bog'lanish</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" data-i18n="footer_hours_title">Mehmonlarni Qabul Qilish</h4>
+          <ul class="footer-links">
+            <li>Dushanba - Yakshanba</li>
+            <li style="color: var(--accent-gold-light); font-weight: 700;">10:00 — 23:00</li>
+            <li><a href="tel:+998992400038">+998 99 240 00 38</a></li>
+            <li>Urganch shahri, Mash'al MFY</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>OLIMP GARDEN RESTAURANT</strong>. <span data-i18n="footer_rights">Barcha huquqlar himoyalangan.</span>
+        </div>
+        <div style="color: var(--accent-gold);">
+          Developed with speed, luxury & elegance.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING QUICK ACTION BUTTONS
+       ========================================================================== -->
+  <div class="floating-actions-container">
+    
+    <!-- Telegram Quick Chat -->
+    <a href="https://t.me/olimpkafe" target="_blank" rel="noopener noreferrer" class="floating-btn telegram" aria-label="Telegram orqali yozish">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="22" y1="2" x2="11" y2="13"/>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+      </svg>
+      <span class="floating-tooltip" data-i18n="floating_telegram">Telegram orqali yozish</span>
+    </a>
+
+    <!-- Direct Phone Call -->
+    <a href="tel:+998992400038" class="floating-btn phone" aria-label="Telefon orqali qo'ng'iroq qilish">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span class="floating-tooltip" data-i18n="floating_call">Qo'ng'iroq qilish</span>
+    </a>
+
+    <!-- Back to top -->
+    <button class="floating-btn back-top" id="backToTopBtn" aria-label="Yuqoriga qaytish">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+      <span class="floating-tooltip" data-i18n="back_to_top">Yuqoriga</span>
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       CART DRAWER / MODAL
+       ========================================================================== -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div class="cart-title-text" data-i18n="cart_title">Sizning Savatchangiz</div>
+      <button class="modal-close-btn" id="cartCloseBtn" aria-label="Savatchani yopish">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Populated dynamically via JS -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span class="cart-subtotal-label" data-i18n="cart_subtotal">Jami hisob:</span>
+        <span class="cart-subtotal-val" id="cartSubtotalVal">0 so'm</span>
+      </div>
+
+      <button class="btn btn-gold" id="cartOrderBtn" style="width: 100%; padding: 15px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+        <span data-i18n="cart_order_telegram">Telegram Orqali Buyurtma Berish</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       RESERVATION SUCCESS MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Yopish">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <div style="text-align: center;">
+        <div style="width: 68px; height: 68px; border-radius: 50%; background: rgba(27, 67, 50, 0.6); border: 2px solid var(--accent-gold); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; font-size: 2rem;">
+          ✓
+        </div>
+
+        <h3 class="section-title" style="font-size: 1.8rem; margin-bottom: 12px;" data-i18n="modal_success_title">
+          Stol Muvaffaqiyatli Band Qilindi!
+        </h3>
+
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 24px;" data-i18n="modal_success_desc">
+          Hurmatli mehmon, sizning bron arizangiz qabul qilindi. Tez orada ma'murlarimiz siz bilan telefon orqali bog'lanishadi.
+        </p>
+
+        <div style="background: rgba(255, 255, 255, 0.04); border: 1px dashed var(--border-gold); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 24px;">
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 4px;" data-i18n="modal_ref_label">Bron Kodingiz:</div>
+          <div id="reservationRefCode" style="font-family: var(--font-serif); font-size: 1.6rem; font-weight: 800; color: var(--accent-gold); letter-spacing: 2px;">
+            OG-8492
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; flex-direction: column;">
+          <button id="modalTelegramBtn" class="btn btn-outline-gold" style="width: 100%;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            <span data-i18n="modal_btn_telegram_confirm">Telegramda Tasdiqni Saqlash</span>
+          </button>
+          
+          <button id="modalDoneBtn" class="btn btn-gold" style="width: 100%;" data-i18n="modal_btn_done">
+            Tushunarli
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- GSAP & ScrollTrigger Animation Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
